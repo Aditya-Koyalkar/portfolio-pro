@@ -10,7 +10,7 @@ export const Header = () => {
           Hey, I&apos;m Aditya &#x1f44b;{" "}
         </div>
         <div className="text-sm mt-2 text-slate-400">
-          Crafting seamless digital experiences as a full-stack wizard
+          {/* Crafting seamless digital experiences as a full-stack wizard */}
         </div>
       </div>
       <div>
