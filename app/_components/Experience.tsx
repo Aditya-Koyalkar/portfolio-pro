@@ -4,12 +4,33 @@ import Image from "next/image";
 import { ExperienceInfo } from "../_data/ExpInfo";
 import { useState } from "react";
 import Link from "next/link";
+import { motion } from "framer-motion";
 
 export const Experience = () => {
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        staggerChildren: 0.2, // Time between each experience item animation
+      },
+    },
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0, y: 20 }, // Start below
+    visible: { opacity: 1, y: 0 }, // Move to original position
+  };
+
   return (
     <div className="flex flex-col gap-1">
       <div className="text-[22px] font-extrabold">Experience</div>
-      <div className="flex flex-col gap-3 mt-3">
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        className="flex flex-col gap-3 mt-3"
+      >
         {ExperienceInfo.map((experience, index) => {
           const [showFullDescription, setShowFullDescription] = useState(false);
           const [showLink, setShowLink] = useState(false);
@@ -19,7 +40,7 @@ export const Experience = () => {
           const truncatedDescription = experience.description.slice(0, 200);
           const isLongDescription = experience.description.length > 200;
           return (
-            <div key={index} className="flex">
+            <motion.div variants={itemVariants} key={index} className="flex">
               <div className="p-3">
                 <Image
                   src={experience.image}
@@ -66,10 +87,10 @@ export const Experience = () => {
                   )}
                 </div>
               </div>
-            </div>
+            </motion.div>
           );
         })}
-      </div>
+      </motion.div>
     </div>
   );
 };
