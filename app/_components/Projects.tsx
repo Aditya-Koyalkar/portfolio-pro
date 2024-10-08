@@ -3,6 +3,9 @@ import Image from "next/image";
 import { ProjectData } from "../_data/ProjectData";
 import { motion } from "framer-motion";
 import { useState } from "react";
+import Link from "next/link";
+import { CiGlobe } from "react-icons/ci";
+import { FaCode } from "react-icons/fa6";
 
 export const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(2);
@@ -59,12 +62,18 @@ export const Projects = () => {
                 ))}
               </div>
               <div className="flex gap-5 mt-4">
-                <button className="p-2 bg-white text-black text-[10px] rounded-md">
-                  Preview
-                </button>
-                <button className="p-2 bg-white text-black text-[10px] rounded-md">
-                  Source
-                </button>
+                <Link
+                  href={project.preview}
+                  className="p-2 bg-white flex items-center gap-2 text-black text-[10px] rounded-md"
+                >
+                  <CiGlobe className="w-4 h-4" /> Preview
+                </Link>
+                <Link
+                  href={project.code}
+                  className="p-2 bg-white flex items-center gap-2 text-black text-[10px] rounded-md"
+                >
+                  <FaCode className="w-5 h-5 text-slate-500" /> Source
+                </Link>
               </div>
             </div>
           </motion.div>
