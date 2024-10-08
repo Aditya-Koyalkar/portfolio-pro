@@ -26,7 +26,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased font-lexend flex justify-center py-10 md:py-16 px-4 md:px-10`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased font-lexend flex justify-center py-10 md:py-16 px-4 md:px-10 dark-mode`}
       >
         <div className="w-full h-full md:max-w-[700px]">{children}</div>
       </body>
