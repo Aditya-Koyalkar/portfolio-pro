@@ -3,7 +3,7 @@ import Profile from "../../assets/image.jpg";
 
 export const Header = () => {
   return (
-    <div className="flex items-center gap-8">
+    <div className="flex items-center justify-between gap-8">
       <div className="">
         <div className="text-2xl font-bold">
           {" "}
