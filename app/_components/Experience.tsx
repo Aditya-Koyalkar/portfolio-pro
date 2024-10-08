@@ -3,6 +3,7 @@
 import Image from "next/image";
 import { ExperienceInfo } from "../_data/ExpInfo";
 import { useState } from "react";
+import Link from "next/link";
 
 export const Experience = () => {
   return (
@@ -11,6 +12,7 @@ export const Experience = () => {
       <div className="flex flex-col gap-3 mt-3">
         {ExperienceInfo.map((experience, index) => {
           const [showFullDescription, setShowFullDescription] = useState(false);
+          const [showLink, setShowLink] = useState(false);
           const toggleDescription = () => {
             setShowFullDescription(!showFullDescription);
           };
@@ -30,9 +32,18 @@ export const Experience = () => {
               <div className="w-full flex flex-col gap-3">
                 <div className="flex justify-between">
                   <div className="flex flex-col gap-1">
-                    <div className="font-bold md:text-[18px]">
-                      {experience.company}
-                    </div>
+                    <Link
+                      target="_blank"
+                      href={experience.link}
+                      className="font-bold cursor-pointer md:text-[18px]"
+                      onMouseEnter={() => setShowLink(true)}
+                      onMouseLeave={() => setShowLink(false)}
+                    >
+                      {experience.company}{" "}
+                      {showLink && (
+                        <span className=" cursor-pointer font-bold">&gt;</span>
+                      )}
+                    </Link>
                     <div className="text-[12px] md:text-sm">
                       {experience.role}
                     </div>

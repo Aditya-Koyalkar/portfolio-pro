@@ -16,7 +16,7 @@ export const ExperienceInfo = [
     description:
       "Architected and implemented the dashboard to fetch consultant profiles , enabling users to seamlessly browse available consultants for managing and booking their appointmentsIntegrated payment gateway(phonepe), ensuring secure and seamless transactions for usersDeveloped an AI-powered resume enhancement application that to analyze and optimize resumes",
     image: AlConnect,
-    link: "",
+    link: "https://al-connect.in/",
     timeline: "Aug 2024 to Sep 2024",
   },
   {
@@ -25,7 +25,7 @@ export const ExperienceInfo = [
     description:
       "Developed and Maintained code for Al-Connect primarily using JavaScript, and React.jsIntroduced and implemented a CI/CD pipeline, reducing deployment times and minimizing downtime.Integrated an analytics tool (Google Analytics) to track user behavior and gather actionable insights",
     image: AlConnect,
-    link: "",
+    link: "https://al-connect.in/",
     timeline: "May 2024 to July-2024",
   },
 ];
