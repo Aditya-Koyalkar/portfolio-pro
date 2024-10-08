@@ -2,8 +2,10 @@
 import Image from "next/image";
 import { ProjectData } from "../_data/ProjectData";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export const Projects = () => {
+  const [visibleProjects, setVisibleProjects] = useState(2);
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -28,7 +30,7 @@ export const Projects = () => {
         animate="visible"
         className="grid grid-cols-1 gap-3 md:grid-cols-2"
       >
-        {ProjectData.map((project, index) => (
+        {ProjectData.slice(0, visibleProjects).map((project, index) => (
           <motion.div
             variants={itemVariants}
             key={index}
@@ -68,6 +70,14 @@ export const Projects = () => {
           </motion.div>
         ))}
       </motion.div>
+      {visibleProjects < ProjectData.length && (
+        <div
+          onClick={() => setVisibleProjects(ProjectData.length)}
+          className="mt-4 p-2 text-white text-center underline text-[14px] rounded-md cursor-pointer"
+        >
+          Show More
+        </div>
+      )}
     </div>
   );
 };
