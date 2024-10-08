@@ -37,7 +37,7 @@ export const Projects = () => {
           <motion.div
             variants={itemVariants}
             key={index}
-            className="rounded-md shadow-sm border border-slate-800 max-w-[500px]"
+            className="rounded-md shadow-sm border border-slate-300 max-w-[500px]"
           >
             <Image
               className="rounded-md h-[200px] w-full"
