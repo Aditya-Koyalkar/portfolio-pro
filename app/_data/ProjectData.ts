@@ -1,5 +1,7 @@
 import SmartForm from "../../assets/smartform.png";
 import PaisaPal from "../../assets/project1.png";
+import EpicEats from "../../assets/epiceats.png";
+
 export const ProjectData = [
   {
     name: "SmartFormAI",
@@ -17,6 +19,23 @@ export const ProjectData = [
     ],
     preview: "https://smartform.adityakoyalkar.online/",
     code: "https://smartform.adityakoyalkar.online/",
+  },
+  {
+    name: "EpicEats",
+    image: EpicEats,
+    description:
+      "Food Ordering platform allows allows users to  order form there city with features for filtering orders by cuisine, price range.Restaurant owner dashboard for tracking orders , stripe integration for secure payments",
+    stack: [
+      "React",
+      "react-query",
+      "express",
+      "Mongodb",
+      "stripe",
+      "TailwindCSS",
+      "Typescript",
+    ],
+    preview: "https://epiceats-me33.onrender.com/",
+    code: "https://github.com/KoyalkarAditya/EpicEats",
   },
   {
     name: "PaisaPal",
