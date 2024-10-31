@@ -51,7 +51,7 @@ export const ProjectData = [
       "gemini",
       "Docker",
     ],
-    preview: "https://github.com/KoyalkarAditya/PaisaPal",
+    preview: "https://paisapal.onrender.com/",
     code: "https://github.com/KoyalkarAditya/PaisaPal",
   },
 ];
