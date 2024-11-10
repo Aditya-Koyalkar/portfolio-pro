@@ -6,6 +6,7 @@ import { MdOutlineMail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
 import { FaXTwitter } from "react-icons/fa6";
+import { ModeToggle } from "./ModeToggle";
 
 export const Navbar = () => {
   return (
@@ -23,6 +24,7 @@ export const Navbar = () => {
             <IoLogoLinkedin className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
           <FaXTwitter className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
+          <ModeToggle />
         </div>
       </div>
     </div>

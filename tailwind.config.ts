@@ -6,9 +6,11 @@ const config: Config = {
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
+        "dark-bg": "black",
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
