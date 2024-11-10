@@ -1,6 +1,7 @@
 import SmartForm from "../../assets/smartform.png";
 import PaisaPal from "../../assets/project1.png";
 import EpicEats from "../../assets/epiceats.png";
+import StayWise from "../../assets/staywise.png";
 
 export const ProjectData = [
   {
@@ -36,6 +37,24 @@ export const ProjectData = [
     ],
     preview: "https://epiceats-me33.onrender.com/",
     code: "https://github.com/KoyalkarAditya/EpicEats",
+  },
+  {
+    name: "StayWise",
+    image: StayWise,
+    description:
+      "StayWise is a full stack Hotel booking platform with hotel admin dashboard and has  secure payments with stripe also allows users to book hotels and manage their bookings.",
+    stack: [
+      "React",
+      "mongodb",
+      "mongoose",
+      "Typescript",
+      "TailwindCSS",
+      "react-query",
+      "express",
+      "stripe",
+    ],
+    preview: "https://staywise-4r35.onrender.com/",
+    code: "https://github.com/KoyalkarAditya/StayWise",
   },
   {
     name: "PaisaPal",
