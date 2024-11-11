@@ -64,15 +64,17 @@ export const Projects = () => {
               <div className="flex gap-5 mt-4">
                 <Link
                   href={project.preview}
-                  className="p-2 bg-white flex items-center gap-2 text-black text-[10px] rounded-md"
+                  className="p-2 bg-slate-600 dark:bg-white flex items-center gap-2 text-white dark:text-black text-[10px] rounded-md"
                 >
-                  <CiGlobe className="w-4 h-4" /> Preview
+                  <CiGlobe className="w-4 h-4 text-slate-50 dark:text-slate-500" />{" "}
+                  Preview
                 </Link>
                 <Link
                   href={project.code}
-                  className="p-2 bg-white flex items-center gap-2 text-black text-[10px] rounded-md"
+                  className="p-2 bg-slate-600 dark:bg-white flex items-center gap-2 text-white dark:text-black text-[10px] rounded-md"
                 >
-                  <FaCode className="w-5 h-5 text-slate-500" /> Source
+                  <FaCode className="w-5 h-5 text-slate-50 dark:text-slate-500" />{" "}
+                  Source
                 </Link>
               </div>
             </div>
