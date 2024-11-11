@@ -7,7 +7,7 @@ export const ExperienceInfo = [
     description:
       "Led the transition of the entire codebase from plain HTML to React, improving maintainability, performance, and scalability.Designed and developed modern, responsive, and user-friendly UIs based on provided designs, elevating the user experience across the platform. tegrated APIs seamlessly to connect frontend interfaces with backend services, ensuring smooth data flow and dynamic content rendering.Implemented full functionality for all features of the startup's product, from user interaction to data management.Optimized the code for production, resolving performance issues, and ensuring the application was production-ready for deployment.",
     image: Proanalyser,
-    link: "https://proanalyser.in/",
+    link: "https://webapp.proanalyser.in/",
     timeline: "Sep 2024 - Current",
   },
   {
