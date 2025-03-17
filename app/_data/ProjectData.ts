@@ -35,7 +35,7 @@ export const ProjectData = [
     name: "PaisaPal",
     image: PaisaPal,
     description:
-      "PaisaPal enables fast and secure money transfers between friends, all with a simple and intuitive interface. Designed to make transactions effortless, FlashPay combines speed and reliability with a sleek UI. It ensures seamless performance and security, making it the go-to app for managing your finances, splitting bills, and sending money in just a few taps.",
+      "PaisaPal enables fast and secure money transfers between friends and merchants ,all with a simple and intuitive interface. Designed to make transactions effortless, FlashPay combines speed and reliability with a sleek UI. It ensures seamless performance and security, making it the go-to app for managing your finances, splitting bills, and sending money in just a few taps.",
     stack: ["NextJs", "Prisma", "Postgres", "Typescript", "TailwindCSS", "gemini", "Docker"],
     preview: "https://paisapal.onrender.com/",
     code: "https://github.com/KoyalkarAditya/PaisaPal",

@@ -4,6 +4,7 @@ import { Experience } from "./_components/Experience";
 import { Skills } from "./_components/Skills";
 import { Projects } from "./_components/Projects";
 import { Navbar } from "./_components/NavBar";
+import { Education } from "./_components/Education";
 
 export default function Home() {
   return (
@@ -11,6 +12,7 @@ export default function Home() {
       <Header />
       <About />
       <Experience />
+      <Education />
       <Skills />
       <Projects />
       <Navbar />
