@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Me from "../../assets/me.jpg";
 export const Header = () => {
   return (
