@@ -9,18 +9,18 @@ export const ProjectData = [
     image: SmartForm,
     description:
       "An AI form builder , where AI will generate form based on the prompt and the form will be customizable and the by sharing the live link of the form responses of the forms can we downloaded by the creator.",
-    stack: ["NextJs", "Prisma", "Postgres", "Typescript", "TailwindCSS", "turborepo", "Docker"],
+    stack: ["NextJs", "Prisma", "Postgres", "Typescript", "TailwindCSS", "gemini"],
     preview: "https://smartform.adityakoyalkar.online/",
     code: "https://smartform.adityakoyalkar.online/",
   },
   {
-    name: "EpicEats",
-    image: EpicEats,
+    name: "PaisaPal",
+    image: PaisaPal,
+    stack: ["NextJs", "Prisma", "Postgres", "Typescript", "TailwindCSS", "turborepo", "Docker", "CI/CD"],
     description:
-      "Food Ordering platform allows allows users to  order form there city with features for filtering orders by cuisine, price range.Restaurant owner dashboard for tracking orders , stripe integration for secure payments",
-    stack: ["React", "react-query", "express", "Mongodb", "stripe", "TailwindCSS", "Typescript"],
-    preview: "https://epiceats-me33.onrender.com/",
-    code: "https://github.com/KoyalkarAditya/EpicEats",
+      "PaisaPal enables fast and secure money transfers between friends and merchants ,all with a simple and intuitive interface. Designed to make transactions effortless, FlashPay combines speed and reliability with a sleek UI. It ensures seamless performance and security, making it the go-to app for managing your finances, splitting bills, and sending money in just a few taps.",
+    preview: "https://paisapal.onrender.com/",
+    code: "https://github.com/KoyalkarAditya/PaisaPal",
   },
   {
     name: "StayWise",
@@ -32,12 +32,12 @@ export const ProjectData = [
     code: "https://github.com/KoyalkarAditya/StayWise",
   },
   {
-    name: "PaisaPal",
-    image: PaisaPal,
+    name: "EpicEats",
+    image: EpicEats,
     description:
-      "PaisaPal enables fast and secure money transfers between friends and merchants ,all with a simple and intuitive interface. Designed to make transactions effortless, FlashPay combines speed and reliability with a sleek UI. It ensures seamless performance and security, making it the go-to app for managing your finances, splitting bills, and sending money in just a few taps.",
-    stack: ["NextJs", "Prisma", "Postgres", "Typescript", "TailwindCSS", "gemini", "Docker"],
-    preview: "https://paisapal.onrender.com/",
-    code: "https://github.com/KoyalkarAditya/PaisaPal",
+      "Food Ordering platform allows allows users to  order form there city with features for filtering orders by cuisine, price range.Restaurant owner dashboard for tracking orders , stripe integration for secure payments",
+    stack: ["React", "react-query", "express", "Mongodb", "stripe", "TailwindCSS", "Typescript"],
+    preview: "https://epiceats-me33.onrender.com/",
+    code: "https://github.com/KoyalkarAditya/EpicEats",
   },
 ];
