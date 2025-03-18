@@ -17,10 +17,10 @@ export const Navbar = () => {
             <IoHomeOutline className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
           <MdOutlineMail className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
-          <Link href={"https://github.com/KoyalkarAditya"}>
+          <Link href={"https://github.com/Aditya-Koyalkar"}>
             <FaGithub className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
-          <Link href={"https://www.linkedin.com/in/koyalkar-aditya-9a1896260/"}>
+          <Link href={"https://www.linkedin.com/in/aditya-koyalkar/"}>
             <IoLogoLinkedin className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
           <FaXTwitter className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
