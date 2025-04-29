@@ -3,9 +3,19 @@ export const About = () => {
     <div className="flex flex-col gap-1">
       <div className="text-[22px] font-extrabold">About</div>
       <div className="text-sm">
-        I&apos;m a Full Stack Developer dedicated to building and designing scalable full-stack applications. I am currently interning at Erino, where
-        I am building a CRM from scratch. Previously, I interned at early-stage startups like ProAnalyser and Al-Connect, where I contributed to the
-        development of their MVPs.
+        I&apos;m a Full Stack Developer focused on building scalable, end-to-end web applications. I&apos;m currently interning at{" "}
+        <a href="https://erino.io/" className="underline text-blue-400">
+          Erino
+        </a>
+        , where I&apos;m developing a CRM platform from the ground up. Previously, I worked with early-stage startups like{" "}
+        <a href="https://proanalyser.in/" className="underline text-blue-400">
+          ProAnalyser
+        </a>{" "}
+        and{" "}
+        <a href="https://al-connect.in/" className="underline text-blue-400">
+          Al-Connect
+        </a>
+        , where I played a key role in building their MVPs and bringing their ideas to life.
       </div>
     </div>
   );
