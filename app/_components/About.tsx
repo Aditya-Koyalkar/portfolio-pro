@@ -7,7 +7,7 @@ export const About = () => {
         <a href="https://erino.io/" className="underline text-blue-400">
           Erino
         </a>
-        , where I&apos;m developing a CRM platform from the ground up. Previously, I worked with early-stage startups like{" "}
+        , where I&apos;m developing a CRM platform from the ground up. Previously worked at{" "}
         <a href="https://proanalyser.in/" className="underline text-blue-400">
           ProAnalyser
         </a>{" "}
