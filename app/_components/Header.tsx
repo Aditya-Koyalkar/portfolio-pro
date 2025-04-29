@@ -1,4 +1,4 @@
-import Me from "../../assets/me.jpg";
+// import Me from "../../assets/me.jpg";
 export const Header = () => {
   return (
     <div className="flex items-center justify-between gap-8">
