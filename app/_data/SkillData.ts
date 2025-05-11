@@ -13,7 +13,7 @@ import Docker from "../../assets/docker.png";
 import Express from "../../assets/express.png";
 import HonoJS from "../../assets/hono.png";
 import GraphQL from "../../assets/graphql.png";
-import Postman from "../../assets/postman.png";
+// import Postman from "../../assets/postman.png";
 
 export const SkillData = [
   {
