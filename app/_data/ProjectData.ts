@@ -9,7 +9,7 @@ export const ProjectData = [
     image: PaisaPal,
     video: "https://res.cloudinary.com/dae31fk75/video/upload/v1746977995/Manim_Video_-_Made_with_Clipchamp_1746976944994_zcwyfp.mp4",
     stack: ["NextJs", "Turborepo", "Postgres", "Typescript", "TailwindCSS", , "Prisma", "Docker", "SocketIO", "AI"],
-    description: "Pointmation is a tool for creating mathematical video animations powered by manim code using AI.",
+    description: "Pointmation is a tool for creating mathematical video animations powered by Manim code using AI.",
     preview: "https://point-mation.vercel.app/",
     code: "https://github.com/Aditya-Koyalkar/PointMation",
   },
