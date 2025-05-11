@@ -1,7 +1,7 @@
 "use client";
-import Image from "next/image";
 import { SkillData } from "../_data/SkillData";
 import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
 
 export const Skills = () => {
   const containerVariants = {
@@ -21,11 +21,10 @@ export const Skills = () => {
   return (
     <div className="flex flex-col gap-1">
       <div className="text-[22px] font-extrabold">Skills</div>
-      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="grid grid-cols-4 md:grid-cols-8 gap-3">
+      <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-wrap gap-2">
         {SkillData.map((skill, index) => (
-          <motion.div key={index} className="relative flex flex-col items-center group" variants={itemVariants}>
-            <div className="mb-2 text-slate-400 text-xs opacity-0 group-hover:opacity-100 transition-opacity">{skill.name}</div>
-            <Image src={skill.logo} alt={skill.name} className="object-cover w-10 h-10 " />
+          <motion.div key={index} variants={itemVariants}>
+            <Badge>{skill.name}</Badge>
           </motion.div>
         ))}
       </motion.div>

@@ -5,7 +5,7 @@ import { IoHomeOutline } from "react-icons/io5";
 import { MdOutlineMail } from "react-icons/md";
 import { FaGithub } from "react-icons/fa6";
 import { IoLogoLinkedin } from "react-icons/io5";
-import { FaXTwitter } from "react-icons/fa6";
+// import { FaXTwitter } from "react-icons/fa6";
 import { ModeToggle } from "./ModeToggle";
 
 export const Navbar = () => {
@@ -16,14 +16,16 @@ export const Navbar = () => {
           <Link href={"/"}>
             <IoHomeOutline className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
-          <MdOutlineMail className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
+          <a href="mailto:koyalkaraditya123@gmail.com">
+            <MdOutlineMail className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
+          </a>{" "}
           <Link href={"https://github.com/Aditya-Koyalkar"}>
             <FaGithub className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
           <Link href={"https://www.linkedin.com/in/aditya-koyalkar/"}>
             <IoLogoLinkedin className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
           </Link>
-          <FaXTwitter className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" />
+          {/* <FaXTwitter className="w-5 h-5 hover:scale-110 cursor-pointer transition-all" /> */}
           <ModeToggle />
         </div>
       </div>

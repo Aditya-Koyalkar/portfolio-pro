@@ -5,8 +5,12 @@ import { ExperienceInfo } from "../_data/ExpInfo";
 import { useState } from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
+import { useMobile } from "@/hooks/useMobile";
+import { cn } from "@/lib/utils";
 
 export const Experience = () => {
+  const isMobile = useMobile();
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
@@ -46,7 +50,7 @@ export const Experience = () => {
           return (
             <motion.div variants={itemVariants} key={index} className="flex items-start">
               <div className="px-3 py-1">
-                <Image src={experience.image} height={50} width={50} alt="" className="rounded-full" />
+                <Image src={experience.image} height={isMobile ? 25 : 50} width={isMobile ? 25 : 50} alt="" className="rounded-full" />
               </div>
               <div className="w-full flex flex-col gap-3">
                 <div className="flex justify-between">
@@ -60,9 +64,11 @@ export const Experience = () => {
                     >
                       {experience.company} {showLink[index] && <span className=" cursor-pointer font-bold">&gt;</span>}
                     </Link>
-                    <div className="text-[12px] md:text-sm">{experience.role}</div>
+                    <Badge className={cn(isMobile && "text-[10px] text-nowrap")} variant={"secondary"}>
+                      {experience.role}
+                    </Badge>
                   </div>
-                  <div className="text-sm text-slate-400">{experience.timeline}</div>
+                  <div className={cn("text-sm text-slate-400 text-nowrap", isMobile && "text-[10px]")}>{experience.timeline}</div>
                 </div>
                 <div className="text-sm">
                   {showFullDescription[index] ? experience.description : truncatedDescription + (isLongDescription ? "..." : "")}

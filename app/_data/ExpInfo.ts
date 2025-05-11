@@ -5,10 +5,20 @@ export const ExperienceInfo = [
   {
     role: "Software Engineering Intern",
     company: "Erino",
-    description: `Developed advanced AG Grid implementations, optimizing performance and enhancing data visualization,supporting mltiple views of records.
- Designed and developed a robust RBAC system ensuring secure access management across multiple user roles in
- multiple teams.Created a seamless flow for inviting users and managing their registration process with email notifications and access
- management.`,
+    description: `Led the end-to-end development of a full-featured CRM platform, streamlining operations and empowering teams
+ to manage customer relationships more effectively.
+  Implemented foundational modules including user/team management, invitation flows, and relational mapping
+ between entities and pipelines to support structured, stage-based deal progression.
+  Developed robust role-based access control systems to enforce permissions, ensuring secure access across
+ admin,managers and members
+  Implemented storage handling for complex record-related assets like notes, tasks, files, and folders, establishing a
+ robust relational system for seamless data management.
+ Built a reliable import/export flow for records, handling field mapping, validation, and error reporting, with
+ seamless processing of bulk data.
+  Engineered advanced AG Grid implementations including mutliple views of records,data manipulation efficiently.
+  Developed a kanban-based record pipeline flow, enabling records to transition through multiple stages and
+ real-time state updates.
+  Created an analytics dashboard to provide insights on CRM activities, record , and team performance.`,
     image: Erino,
     link: "https://erino.io/",
     timeline: "Nov 2024 - Present",
@@ -18,7 +28,7 @@ export const ExperienceInfo = [
     role: "Frontend Developer - Contract",
     company: "ProAnalyser",
     description:
-      "Led the transition of the entire codebase from plain HTML to React, improving maintainability, performance, and scalability.Designed and developed modern, responsive, and user-friendly UIs based on provided designs, elevating the user experience across the platform. tegrated APIs seamlessly to connect frontend interfaces with backend services, ensuring smooth data flow and dynamic content rendering.Implemented full functionality for all features of the startup's product, from user interaction to data management.Optimized the code for production, resolving performance issues, and ensuring the application was production-ready for deployment.",
+      "Led the transition of the entire frontend from static HTML to a dynamic React.js enabling a more scalable and maintainable codebase.Implemented complete user-facing features for the bank statement analysis product, including authentication,dashboard views, and interactive bank statement summaries.",
     image: Proanalyser,
     link: "https://webapp.proanalyser.in/",
     timeline: "Sep 2024 - Oct 2024",
@@ -27,7 +37,7 @@ export const ExperienceInfo = [
     role: "Full-Stack Developer Intern",
     company: "Al-Connect",
     description:
-      "Architected and implemented the dashboard to fetch consultant profiles , enabling users to seamlessly browse available consultants for managing and booking their appointmentsIntegrated payment gateway(phonepe), ensuring secure and seamless transactions for usersDeveloped an AI-powered resume enhancement application that to analyze and optimize resumes",
+      "Architected and implemented  system for users to discover and book consultants, enabling appointment scheduling, consultant browsing .Integrated the PhonePe payment gateway to facilitate secure, real-time transactions, ensuring a smooth and reliable payment experience. Developed an AI-powered resume enhancement application that to analyze and optimize resumes",
     image: AlConnect,
     link: "https://al-connect.in/",
     timeline: "Aug 2024 - Sep 2024",
@@ -36,7 +46,7 @@ export const ExperienceInfo = [
     role: "Frontend Developer Intern",
     company: "Al-Connect",
     description:
-      "Developed and Maintained code for Al-Connect primarily using JavaScript, and React.jsIntroduced and implemented a CI/CD pipeline, reducing deployment times and minimizing downtime.Integrated an analytics tool (Google Analytics) to track user behavior and gather actionable insights",
+      "Led the frontend initiatives at Al-Connect primarily using JavaScript, React.js and MUI . Introduced and implemented a CI/CD pipeline, reducing deployment times and minimizing downtime .",
     image: AlConnect,
     link: "https://al-connect.in/",
     timeline: "May 2024 - July 2024",
