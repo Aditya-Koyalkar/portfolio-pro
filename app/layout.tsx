@@ -17,6 +17,9 @@ import { GeistMono } from "geist/font/mono";
 export const metadata: Metadata = {
   title: "Aditya",
   description: "Portfolio",
+  icons: {
+    icon: "/favicon.svg",
+  },
 };
 
 export default function RootLayout({

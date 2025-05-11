@@ -1,0 +1,13 @@
+<svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0070f3"></stop>
+      <stop offset="100%" stop-color="#00bcd4"></stop>
+    </linearGradient>
+  </defs>
+
+  <rect x="1" y="1" width="30" height="30" rx="8" ry="8" fill="url(#bg-gradient)" transform="rotate(3, 16, 16)"></rect>
+
+  <path d="M16,4 L25,27 L20,27 L18.5,22 L13.5,22 L12,27 L7,27 L16,4 Z" fill="white"></path>
+
+  </svg>
