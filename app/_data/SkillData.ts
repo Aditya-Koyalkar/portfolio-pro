@@ -37,18 +37,6 @@ export const SkillData = [
     name: "java",
   },
   {
-    logo: HTML,
-    name: "html",
-  },
-  {
-    logo: CSS,
-    name: "css",
-  },
-  {
-    logo: Tailwind,
-    name: "tailwind",
-  },
-  {
     logo: MongoDB,
     name: "mongodb",
   },
@@ -69,6 +57,19 @@ export const SkillData = [
     name: "express",
   },
   {
+    logo: HTML,
+    name: "html",
+  },
+  {
+    logo: CSS,
+    name: "css",
+  },
+  {
+    logo: Tailwind,
+    name: "tailwind",
+  },
+
+  {
     logo: HonoJS,
     name: "honojs",
   },
@@ -77,7 +78,6 @@ export const SkillData = [
     name: "graphql",
   },
   {
-    logo: Postman,
-    name: "postman",
+    name: "& Much more",
   },
 ];
