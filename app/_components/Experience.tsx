@@ -44,13 +44,10 @@ export const Experience = () => {
       <div className="text-[22px] font-extrabold">Experience</div>
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col gap-3 mt-3">
         {ExperienceInfo.map((experience, index) => {
-          const truncatedDescription = experience.description.slice(0, 200);
-          const isLongDescription = experience.description.length > 200;
-
           return (
             <motion.div variants={itemVariants} key={index} className="flex items-start">
               <div className="px-3 py-1">
-                <Image src={experience.image} height={isMobile ? 25 : 50} width={isMobile ? 25 : 50} alt="" className="rounded-full" />
+                <Image src={experience.image} height={isMobile ? 25 : 40} width={isMobile ? 25 : 40} alt="" className="rounded-full" />
               </div>
               <div className="w-full flex flex-col gap-3">
                 <div className="flex justify-between">
@@ -70,14 +67,16 @@ export const Experience = () => {
                   </div>
                   <div className={cn("text-sm text-slate-400 text-nowrap", isMobile && "text-[10px]")}>{experience.timeline}</div>
                 </div>
-                <div className="text-sm">
-                  {showFullDescription[index] ? experience.description : truncatedDescription + (isLongDescription ? "..." : "")}
-                  {isLongDescription && (
-                    <span className="text-slate-500 ml-1 underline cursor-pointer" onClick={() => toggleDescription(index)}>
-                      {showFullDescription[index] ? " Show Less" : " Show More"}
-                    </span>
-                  )}
-                </div>
+                <ul className="list-disc pl-5 text-sm space-y-1">
+                  {(showFullDescription[index] ? experience.description : experience.description.slice(0, 3)).map((point, i) => (
+                    <li key={i}>{point}</li>
+                  ))}
+                </ul>
+                {experience.description.length > 3 && (
+                  <span className="text-slate-500 ml-1 underline cursor-pointer text-sm" onClick={() => toggleDescription(index)}>
+                    {showFullDescription[index] ? "Show Less" : "Show More"}
+                  </span>
+                )}
               </div>
             </motion.div>
           );
