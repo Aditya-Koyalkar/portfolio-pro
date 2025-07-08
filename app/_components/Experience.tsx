@@ -65,7 +65,7 @@ export const Experience = () => {
                       {experience.role}
                     </Badge>
                   </div>
-                  <div className={cn("text-xs text-muted-foreground text-nowrap")}>{experience.timeline}</div>
+                  <div className={cn("text-xs text-muted-foreground ", isMobile && "text-left")}>{experience.timeline}</div>
                 </div>
                 {/* <ul className="list-disc pl-5 text-sm space-y-1">
                   {(showFullDescription[index] ? experience.description : experience.description.slice(0, 3)).map((point, i) => (

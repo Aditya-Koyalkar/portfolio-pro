@@ -31,7 +31,7 @@ export const Education = () => {
                 </Link>
                 <div className="text-xs">Btech in Computer Science and Engineering</div>
               </div>
-              <div className={cn("text-xs text-muted-foreground text-nowrap")}>June 2021 - June 2025</div>
+              <div className={cn("text-xs text-muted-foreground ", isMobile && "text-left ml-1")}>June 2021 - June 2025</div>
             </div>
           </div>
         </div>
