@@ -7,7 +7,7 @@ import Link from "next/link";
 import { CiGlobe } from "react-icons/ci";
 import { FaCode } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
-import { buttonVariants } from "@/components/ui/button";
+import { Button, buttonVariants } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 export const Projects = () => {
@@ -80,14 +80,22 @@ export const Projects = () => {
           </motion.div>
         ))}
       </motion.div>
-      {visibleProjects < ProjectData.length && (
-        <div
-          onClick={() => setVisibleProjects(ProjectData.length)}
-          className="mt-4 p-2 text-white text-center underline text-[14px] rounded-md cursor-pointer"
-        >
-          Show More
-        </div>
-      )}
+      <div className="flex justify-center mt-3">
+        {ProjectData.length > 2 && (
+          <Button
+            variant={"outline"}
+            onClick={() => {
+              if (visibleProjects == ProjectData.length) {
+                setVisibleProjects(2);
+              } else setVisibleProjects(ProjectData.length);
+            }}
+            size={"sm"}
+            className="w-fit"
+          >
+            {visibleProjects == ProjectData.length ? "Show less Projects" : "Show More Projects"}
+          </Button>
+        )}
+      </div>
     </div>
   );
 };
