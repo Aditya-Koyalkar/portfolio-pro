@@ -14,6 +14,12 @@ import Express from "../../assets/express.png";
 import HonoJS from "../../assets/hono.png";
 // import GraphQL from "../../assets/graphql.png";
 // import Postman from "../../assets/postman.png";
+import Nodejs from "../../assets/nodejs.png";
+import Drizzle from "../../assets/drizzle.png";
+import Socket from "../../assets/socket.jpg";
+import Redis from "../../assets/drizzle.png";
+import AWS from "../../assets/aws.png";
+import TRPC from "../../assets/trpc.png";
 
 export const SkillData = [
   {
@@ -33,6 +39,7 @@ export const SkillData = [
     name: "Typescript",
   },
   {
+    logo: Nodejs,
     name: "Node.js",
   },
   {
@@ -52,6 +59,7 @@ export const SkillData = [
     name: "Prisma ORM",
   },
   {
+    logo: Drizzle,
     name: "Drizzle ORM",
   },
   {
@@ -72,18 +80,22 @@ export const SkillData = [
     name: "Hono.js",
   },
   {
+    logo: Socket,
     name: "Socket.io",
   },
   {
+    logo: Redis,
     name: "Redis",
   },
   {
+    logo: AWS,
     name: "AWS",
   },
   {
     name: "Zustand",
   },
   {
+    logo: TRPC,
     name: "TRPC",
   },
 ];
