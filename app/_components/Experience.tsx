@@ -67,7 +67,7 @@ export const Experience = () => {
                   </div>
                   <div className={cn("text-sm text-slate-400 text-nowrap", isMobile && "text-[10px]")}>{experience.timeline}</div>
                 </div>
-                <ul className="list-disc pl-5 text-sm space-y-1">
+                {/* <ul className="list-disc pl-5 text-sm space-y-1">
                   {(showFullDescription[index] ? experience.description : experience.description.slice(0, 3)).map((point, i) => (
                     <li key={i}>{point}</li>
                   ))}
@@ -76,7 +76,7 @@ export const Experience = () => {
                   <span className="text-slate-500 ml-1 underline cursor-pointer text-sm" onClick={() => toggleDescription(index)}>
                     {showFullDescription[index] ? "Show Less" : "Show More"}
                   </span>
-                )}
+                )} */}
               </div>
             </motion.div>
           );

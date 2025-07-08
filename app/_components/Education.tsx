@@ -31,7 +31,7 @@ export const Education = () => {
                 </Link>
                 <div className="text-[12px] md:text-sm">Btech in Computer Science and Engineering</div>
               </div>
-              <div className={cn("text-sm text-slate-400 text-nowrap", isMobile && "text-[10px]")}>2021-2025</div>
+              <div className={cn("text-sm text-slate-400 text-nowrap", isMobile && "text-[10px]")}>June 2021 - June 2025</div>
             </div>
           </div>
         </div>
