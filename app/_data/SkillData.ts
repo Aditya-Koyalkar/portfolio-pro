@@ -3,8 +3,8 @@ import TypeScript from "../../assets/ts.png";
 import ReactLogo from "../../assets/reactlogo.png";
 import NextJS from "../../assets/nextjs.png";
 import Java from "../../assets/java.png";
-import HTML from "../../assets/htmllogo.png";
-import CSS from "../../assets/css.png";
+// import HTML from "../../assets/htmllogo.png";
+// import CSS from "../../assets/css.png";
 import Tailwind from "../../assets/tailwindcss.png";
 import MongoDB from "../../assets/mongo.png";
 import Postgres from "../../assets/postgres.png";
@@ -12,72 +12,78 @@ import Prisma from "../../assets/prisma.png";
 import Docker from "../../assets/docker.png";
 import Express from "../../assets/express.png";
 import HonoJS from "../../assets/hono.png";
-import GraphQL from "../../assets/graphql.png";
+// import GraphQL from "../../assets/graphql.png";
 // import Postman from "../../assets/postman.png";
 
 export const SkillData = [
   {
-    logo: JavaScript,
-    name: "javascript",
-  },
-  {
-    logo: TypeScript,
-    name: "typescript",
-  },
-  {
     logo: ReactLogo,
-    name: "react",
+    name: "React",
   },
   {
     logo: NextJS,
-    name: "nextjs",
+    name: "Next.js",
+  },
+  {
+    logo: JavaScript,
+    name: "Javascript",
+  },
+  {
+    logo: TypeScript,
+    name: "Typescript",
+  },
+  {
+    name: "Node.js",
   },
   {
     logo: Java,
-    name: "java",
+    name: "Java",
   },
   {
     logo: MongoDB,
-    name: "mongodb",
+    name: "MongoDB",
   },
   {
     logo: Postgres,
-    name: "postgres",
+    name: "PostgreSQL",
   },
   {
     logo: Prisma,
-    name: "prisma",
+    name: "Prisma ORM",
+  },
+  {
+    name: "Drizzle ORM",
   },
   {
     logo: Docker,
-    name: "docker",
+    name: "Docker",
   },
   {
     logo: Express,
-    name: "express",
-  },
-  {
-    logo: HTML,
-    name: "html",
-  },
-  {
-    logo: CSS,
-    name: "css",
+    name: "Express",
   },
   {
     logo: Tailwind,
-    name: "tailwind",
+    name: "Tailwind CSS",
   },
 
   {
     logo: HonoJS,
-    name: "honojs",
+    name: "Hono.js",
   },
   {
-    logo: GraphQL,
-    name: "graphql",
+    name: "Socket.io",
   },
   {
-    name: "& Much more",
+    name: "Redis",
+  },
+  {
+    name: "AWS",
+  },
+  {
+    name: "Zustand",
+  },
+  {
+    name: "TRPC",
   },
 ];

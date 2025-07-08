@@ -27,8 +27,8 @@ export const Projects = () => {
   };
 
   return (
-    <div className="flex flex-col gap-1">
-      <div className="text-[22px] font-extrabold">Projects</div>
+    <div className="flex flex-col gap-2">
+      <div className="text-xl font-extrabold">Projects</div>
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {ProjectData.slice(0, visibleProjects).map((project, index) => (
           <motion.div variants={itemVariants} key={index} className="rounded-md shadow-sm border border-slate-300 max-w-[500px]">

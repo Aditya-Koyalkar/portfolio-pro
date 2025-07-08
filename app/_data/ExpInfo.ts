@@ -17,11 +17,11 @@ export const ExperienceInfo = [
     ],
     image: Erino,
     link: "https://erino.io/",
-    timeline: "Nov 2024 - Present",
+    timeline: "Nov 2024 - May 2025",
   },
 
   {
-    role: "Frontend Developer - Contract",
+    role: "Frontend Developer Intern",
     company: "ProAnalyser",
     description: [
       "Led the transition of the entire frontend from static HTML to a dynamic React.js enabling a more scalable and maintainable codebase.",

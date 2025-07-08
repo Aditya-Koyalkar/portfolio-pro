@@ -40,8 +40,8 @@ export const Experience = () => {
   };
 
   return (
-    <div className="flex flex-col gap-1">
-      <div className="text-[22px] font-extrabold">Experience</div>
+    <div className="flex flex-col gap-2">
+      <div className="text-xl font-extrabold">Experience</div>
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-col gap-3 mt-3">
         {ExperienceInfo.map((experience, index) => {
           return (
@@ -50,22 +50,22 @@ export const Experience = () => {
                 <Image src={experience.image} height={isMobile ? 25 : 40} width={isMobile ? 25 : 40} alt="" className="rounded-full" />
               </div>
               <div className="w-full flex flex-col gap-3">
-                <div className="flex justify-between">
+                <div className="grid grid-cols-[75%_25%]">
                   <div className="flex flex-col gap-1">
                     <Link
                       target="_blank"
                       href={experience.link}
-                      className="font-bold cursor-pointer md:text-[18px]"
+                      className="font-bold cursor-pointer text-sm"
                       onMouseEnter={() => handleMouseEnter(index)}
                       onMouseLeave={() => handleMouseLeave(index)}
                     >
                       {experience.company} {showLink[index] && <span className=" cursor-pointer font-bold">&gt;</span>}
                     </Link>
-                    <Badge className={cn(isMobile && "text-[10px] text-nowrap")} variant={"secondary"}>
+                    <Badge className={cn("text-nowrap w-fit text-xs")} variant={"secondary"}>
                       {experience.role}
                     </Badge>
                   </div>
-                  <div className={cn("text-sm text-slate-400 text-nowrap", isMobile && "text-[10px]")}>{experience.timeline}</div>
+                  <div className={cn("text-xs text-muted-foreground text-nowrap")}>{experience.timeline}</div>
                 </div>
                 {/* <ul className="list-disc pl-5 text-sm space-y-1">
                   {(showFullDescription[index] ? experience.description : experience.description.slice(0, 3)).map((point, i) => (

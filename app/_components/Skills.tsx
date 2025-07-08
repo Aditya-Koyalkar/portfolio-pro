@@ -2,6 +2,7 @@
 import { SkillData } from "../_data/SkillData";
 import { motion } from "framer-motion";
 import { Badge } from "@/components/ui/badge";
+import Image from "next/image";
 
 export const Skills = () => {
   const containerVariants = {
@@ -19,12 +20,14 @@ export const Skills = () => {
   };
 
   return (
-    <div className="flex flex-col gap-1">
-      <div className="text-[22px] font-extrabold">Skills</div>
+    <div className="flex flex-col gap-2">
+      <div className="text-xl font-extrabold">Skills</div>
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="flex flex-wrap gap-2">
         {SkillData.map((skill, index) => (
           <motion.div key={index} variants={itemVariants}>
-            <Badge>{skill.name}</Badge>
+            <Badge className="border-dashed border-muted-foreground flex gap-1" variant={"outline"}>
+              {skill.logo && <Image src={skill.logo} alt={skill.name} height={15} width={15} className="rounded-full" />} {skill.name}
+            </Badge>
           </motion.div>
         ))}
       </motion.div>
