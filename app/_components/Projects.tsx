@@ -8,6 +8,7 @@ import { CiGlobe } from "react-icons/ci";
 import { FaCode } from "react-icons/fa6";
 import { Badge } from "@/components/ui/badge";
 import { buttonVariants } from "@/components/ui/button";
+import { cn } from "@/lib/utils";
 
 export const Projects = () => {
   const [visibleProjects, setVisibleProjects] = useState(2);
@@ -31,39 +32,46 @@ export const Projects = () => {
       <div className="text-xl font-extrabold">Projects</div>
       <motion.div variants={containerVariants} initial="hidden" animate="visible" className="grid grid-cols-1 gap-3 md:grid-cols-2">
         {ProjectData.slice(0, visibleProjects).map((project, index) => (
-          <motion.div variants={itemVariants} key={index} className="rounded-md shadow-sm border border-slate-300 max-w-[500px]">
+          <motion.div variants={itemVariants} key={index} className="rounded-md shadow-sm border flex flex-col h-full">
             {project.video ? (
-              <video className="w-full" src={project.video} autoPlay loop />
+              <video className="w-full rounded-md h-40" src={project.video} autoPlay loop height={300} width={300} />
             ) : (
-              <Image className="rounded-md h-[200px] w-full object-cover" src={project.image} height={300} width={300} alt="" />
+              <Image className="rounded-md w-full h-40" src={project.image} height={300} width={300} alt="" />
             )}
-            <div className="p-2 text-md">
+            <div className="p-2 flex flex-col flex-grow">
               <div className="font-bold">{project.name}</div>
-              <div className="text-[12px] mt-2 text-slate-400">{project.description}</div>
+              <div className="text-xs mt-2 text-muted-foreground">{project.description}</div>
               <div className="flex flex-wrap gap-2 mt-2">
                 {project.stack.map((skill, index) => (
-                  <Badge variant={"secondary"} key={index}>
+                  <Badge variant={"secondary"} key={index} className="text-xs h-4">
                     {skill}
                   </Badge>
                 ))}
               </div>
-              <div className="flex gap-5 mt-4">
+              <div className="flex gap-5 mt-2">
                 <Link
                   target="_blank"
                   href={project.preview}
-                  className={buttonVariants({
-                    size: "sm",
-                  })}
+                  className={cn(
+                    buttonVariants({
+                      size: "sm",
+                      variant: "outline",
+                    }),
+                    "border-dashed"
+                  )}
                 >
                   <CiGlobe className="w-4 h-4" /> Preview
                 </Link>
                 <Link
                   target="_blank"
                   href={project.code}
-                  className={buttonVariants({
-                    size: "sm",
-                    variant: "secondary",
-                  })}
+                  className={cn(
+                    buttonVariants({
+                      size: "sm",
+                      variant: "outline",
+                    }),
+                    "border-dashed"
+                  )}
                 >
                   <FaCode className="w-5 h-5" /> Source
                 </Link>

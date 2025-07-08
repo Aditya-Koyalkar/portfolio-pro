@@ -20,7 +20,7 @@ export default function Home() {
       <Separator />
       <Skills />
       <Separator />
-      {/* <Projects /> */}
+      <Projects />
       <Navbar />
     </div>
   );
