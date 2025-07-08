@@ -29,10 +29,10 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${GeistMono.className} antialiased font-lexend flex justify-center py-10 md:py-16 px-4 md:px-10 dark:bg-black`}>
+      <body className={`${GeistMono.className} antialiased font-lexend flex justify-center py-10 md:py-16 px-4 md:px-10`}>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           {" "}
-          <div className="w-full h-full md:max-w-[650px]">{children}</div>{" "}
+          <div className="w-full h-full md:max-w-[700px] border-dashed  border-2 p-4">{children}</div>{" "}
         </ThemeProvider>
       </body>
     </html>
