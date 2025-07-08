@@ -25,11 +25,11 @@ export const Experience = () => {
     hidden: { opacity: 0, y: 20 },
     visible: { opacity: 1, y: 0 },
   };
-  const [showFullDescription, setShowFullDescription] = useState(Array(ExperienceInfo.length).fill(false));
+  // const [showFullDescription, setShowFullDescription] = useState(Array(ExperienceInfo.length).fill(false));
   const [showLink, setShowLink] = useState(Array(ExperienceInfo.length).fill(false));
-  const toggleDescription = (index: number) => {
-    setShowFullDescription((prevState) => prevState.map((item, i) => (i === index ? !item : item)));
-  };
+  // const toggleDescription = (index: number) => {
+  //   setShowFullDescription((prevState) => prevState.map((item, i) => (i === index ? !item : item)));
+  // };
 
   const handleMouseEnter = (index: number) => {
     setShowLink((prevState) => prevState.map((item, i) => (i === index ? true : item)));

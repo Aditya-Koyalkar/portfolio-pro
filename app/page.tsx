@@ -6,6 +6,7 @@ import { Projects } from "./_components/Projects";
 import { Navbar } from "./_components/NavBar";
 import { Education } from "./_components/Education";
 import { Separator } from "@/components/ui/separator";
+import { GetInTouch } from "./_components/GetInTouch";
 
 export default function Home() {
   return (
@@ -16,11 +17,13 @@ export default function Home() {
       <Separator />
       <Experience />
       <Separator />
-      <Education />
-      <Separator />
       <Skills />
       <Separator />
       <Projects />
+      <Separator />
+      <Education />
+      <Separator />
+      <GetInTouch />
       <Navbar />
     </div>
   );
