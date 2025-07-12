@@ -3,7 +3,18 @@ import PaisaPal from "../../assets/project1.png";
 import EpicEats from "../../assets/epiceats.png";
 import StayWise from "../../assets/staywise.png";
 import TelegramMinize from "../../assets/telegram-monitizer.png";
+import DeepMeetAi from "../../assets/deepmeetai.png";
+
 export const ProjectData = [
+  {
+    name: "DeepMeet.AI",
+    image: DeepMeetAi,
+    stack: ["Next.js", "TRPC", "Postgres", "Better Auth", "Typescript", "TailwindCSS", "TanstackQuery", "Drizzle", "Polar", "OpenAI", "Gemini AI"],
+    description:
+      "DeepMeet.AI is a  platform that empowers users to initiate real-time video calls with custom AI agents tailored to their specific needs. During and after each call, the platform automatically generates detailed meeting summaries and transcripts, enabling users to stay focused and revisit important discussions anytime. Beyond the live interaction, DeepMeet.AI offers a comprehensive post-call experience with features like video playback, transcript search, and an intelligent AI chat that retains full context of the meeting—making follow-ups seamless and insight-driven.",
+    preview: "https://deepmeetai.vercel.app/",
+    code: "https://github.com/Aditya-Koyalkar/MeetAI",
+  },
   {
     name: "Pointmation",
     image: PaisaPal,
