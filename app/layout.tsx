@@ -3,35 +3,50 @@ import "./globals.css";
 import { ThemeProvider } from "./_components/ThemeProvider";
 import { GeistMono } from "geist/font/mono";
 
-// const geistSans = localFont({
-//   src: "./fonts/GeistVF.woff",
-//   variable: "--font-geist-sans",
-//   weight: "100 900",
-// });
-// const geistMono = localFont({
-//   src: "./fonts/GeistMonoVF.woff",
-//   variable: "--font-geist-mono",
-//   weight: "100 900",
-// });
-
 export const metadata: Metadata = {
-  title: "Aditya",
-  description: "Full Stack Developer",
-  icons: {
-    icon: "/me.jpg",
+  metadataBase: new URL("https://www.adityakoyalkar.tech/"),
+  title: {
+    default: "Aditya Koyalkar",
+    template: "%s | Aditya Koyalkar",
   },
+  description:
+    "I'm Aditya Koyalkar — a Full Stack Developer specializing in React, Next.js, and TypeScript. Based in India, I build modern, fast, and accessible web applications.",
   keywords: [
-    "Full Stack Developer",
-    "Web Designer",
-    "Next.js",
-    "React",
-    "TypeScript",
-    "India",
-    "Aditya",
-    "Koyalkar Aditya",
     "Aditya Koyalkar",
-    "Portfolio",
+    "Koyalkar Aditya",
+    "Aditya Developer",
+    "Aditya Koyalkar Portfolio",
+    "Full Stack Developer India",
+    "React Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "Frontend Engineer",
   ],
+  authors: [{ name: "Aditya Koyalkar", url: "https://www.adityakoyalkar.tech/" }],
+  creator: "Aditya Koyalkar",
+  openGraph: {
+    title: "Aditya Koyalkar - Full Stack Developer",
+    description:
+      "Portfolio of Aditya Koyalkar — Full Stack Developer from India. Specialized in building modern apps with React, Next.js, and TypeScript.",
+    url: "https://www.adityakoyalkar.tech/",
+    siteName: "Aditya Koyalkar",
+    images: [
+      {
+        url: "/me.jpg",
+        width: 1200,
+        height: 675,
+        alt: "Aditya Koyalkar - Full Stack Developer",
+      },
+    ],
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "@Aditya___twt",
+    creator: "@Aditya___twt",
+    images: ["/me.jpg"],
+  },
 };
 
 export default function RootLayout({
