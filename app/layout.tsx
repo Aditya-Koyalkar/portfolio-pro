@@ -16,10 +16,22 @@ import { GeistMono } from "geist/font/mono";
 
 export const metadata: Metadata = {
   title: "Aditya",
-  description: "Portfolio",
+  description: "Full Stack Developer",
   icons: {
     icon: "/me.jpg",
   },
+  keywords: [
+    "Full Stack Developer",
+    "Web Designer",
+    "Next.js",
+    "React",
+    "TypeScript",
+    "India",
+    "Aditya",
+    "Koyalkar Aditya",
+    "Aditya Koyalkar",
+    "Portfolio",
+  ],
 };
 
 export default function RootLayout({
