@@ -7,7 +7,7 @@ export const ExperienceInfo = [
     role: "Full Stack Engineer",
     company: "Propertyloop/QuantumloopAI",
     image: QL,
-    description: [],
+    description: ["I am currently working on building EMMA, an AI virtual receptionist at QuantumLoopAI, a sister company of PropertyLoop. EMMA handles over 3,000 patient calls daily, helping GP surgeries across the UK safely triage patient requests, reducing waiting times and call queues."],
     link: "https://www.quantumloopai.com/",
     timeline: "Aug 2025 - Present"
   },
