@@ -1,7 +1,17 @@
 import Proanalyser from "../../assets/proanalyser.jpeg";
 import AlConnect from "../../assets/alconnect.png";
 import Erino from "../../assets/erino.png";
+import QL from "../../assets/quantumloopai_logo.jpg"
 export const ExperienceInfo = [
+  {
+    role: "Full Stack Engineer",
+    company: "Propertyloop/QuantumloopAI",
+    image: QL,
+    description: [],
+    link: "https://www.quantumloopai.com/",
+    timeline: "Aug 2025 - Present"
+  },
+
   {
     role: "Software Engineering Intern",
     company: "Erino",
